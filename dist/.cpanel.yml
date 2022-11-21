@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/davidcve/public_html/
+    - export DEPLOYPATH=/home/davidcve/public_html/dist
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp/css styles.css $DEPLOYPATH
     - /bin/cp -R images $DEPLOYPATH
