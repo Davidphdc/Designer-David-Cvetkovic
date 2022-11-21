@@ -25,20 +25,7 @@ export default class extends AbstractView {
      <div class="headtech">
       <div class="headtech_content">
         <h1>Technology</h1>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-        explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
+        <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>       
       </div>
      </div>
     
