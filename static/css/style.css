@@ -309,6 +309,11 @@ input[type=submit] {
   font-weight: 400;
   font-size: 0.8rem;
 }
+@media (max-width: 63.9375em) {
+  .footer .section h4 {
+    font-size: 0.6rem;
+  }
+}
 .footer .section__socials {
   display: flex;
   flex-direction: row;
@@ -361,7 +366,7 @@ input[type=submit] {
   align-items: center;
   position: relative;
   margin: 0;
-  padding: 4.2rem 2rem 2rem 2rem;
+  padding: 2rem;
   height: 100vh;
   background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
 }
@@ -378,24 +383,9 @@ input[type=submit] {
   height: 80vh;
   -webkit-animation: aboutRefresh 2s ease-out 0s 1;
           animation: aboutRefresh 2s ease-out 0s 1;
-  padding: 2rem;
 }
 .bio_content .content_display::-webkit-scrollbar {
   display: none;
-}
-.bio_content .content_display h2 {
-  letter-spacing: 0.4rem;
-  color: #ff5703;
-  padding: 1rem;
-}
-@media (max-width: 63.9375em) {
-  .bio_content .content_display h2 {
-    font-size: 1.2rem;
-  }
-}
-.bio_content .content_display p {
-  font-size: 1.2rem;
-  background-color: rgba(255, 255, 255, 0.9);
 }
 .bio_content .content_display .headbio {
   display: flex;
@@ -406,25 +396,20 @@ input[type=submit] {
     flex-direction: column;
   }
 }
-.bio_content .content_display .headbio .images img {
-  height: 100%;
-}
 .bio_content .content_display .headbio_content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 1rem;
   transition: 200ms ease-in-out;
 }
 .bio_content .content_display .headbio_content h1 {
   color: #ff5703;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
-  padding: 0 1rem;
   background-color: rgba(255, 255, 255, 0.9);
-  max-width: 16rem;
-  text-align: right;
+  width: auto;
+  text-align: center;
   font-size: 1.8rem;
 }
 @media (max-width: 63.9375em) {
@@ -432,9 +417,21 @@ input[type=submit] {
     font-size: 1.4rem;
   }
 }
+.bio_content .content_display .headbio_content h2 {
+  letter-spacing: 0.2rem;
+  color: #ff5703;
+  font-size: 1.4rem;
+}
 .bio_content .content_display .headbio_content p {
-  padding: 1rem;
   align-self: flex-end;
+}
+.bio_content .content_display .headbio .images img {
+  height: 100%;
+}
+@media (max-width: 63.9375em) {
+  .bio_content .content_display .headbio .images img {
+    height: 70%;
+  }
 }
 .bio_content .content_display .headtech {
   margin-top: 4rem;
@@ -449,18 +446,16 @@ input[type=submit] {
 .bio_content .content_display .headtech_content {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: space-around;
   padding: 0 1rem;
   transition: 200ms ease-in-out;
 }
 .bio_content .content_display .headtech_content h1 {
   color: #ff5703;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
   padding: 0 1rem;
   background-color: rgba(255, 255, 255, 0.9);
-  max-width: 32rem;
   text-align: right;
   font-size: 1.8rem;
   margin-bottom: 2rem;
@@ -471,7 +466,6 @@ input[type=submit] {
   }
 }
 .bio_content .content_display .headtech_content p {
-  padding: 1rem;
   align-self: flex-end;
 }
 
