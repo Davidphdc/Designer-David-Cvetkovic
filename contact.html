@@ -12,7 +12,7 @@
 
   <script src="https://kit.fontawesome.com/e5e981c3a8.js" crossorigin="anonymous"></script>
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <title>David Cvetkovic | Designer | About</title>
+  <title>David Cvetkovic | Designer</title>
 </head>
 <body>
   <header class="header">
@@ -31,30 +31,25 @@
     <div class="menu-btn"></div>
   </header>
   <div id="app">
-    <div class="bio_content">
-      <div class="content_display">
-       <div class="headbio">
-        <div class="headbio_content">
-          <h1>Bio</h1>
-          <h2>David Cvetkovic</h2>
-          <h2>Designer | Adevnturer | Explorer & All Round Nature Enthusiast.</h2>    
-          <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David
-          explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>
-        </div>
-        <div class="images"><img src="/static/assets/David001.png"></div>
-       </div>      
-     
-  
-       <div class="headtech">
-        <div class="headtech_content">
-          <h1>Technology</h1>
-          <p>David is passionate about exploring the world and learning how to best live and grow within this natural environment in unison with the advancement of technology. David draws on the art, architecture, science, culture and people around him, embracing the unique differences and relishing in the many similarities we all share. Colour, line and shape are the key aspects David explores to create vibrant and loud designs that are clean and sharp whilst maintaining a holistic ethos.</p>       
-        </div>
-       </div>
-      
-      </div>
+    <div class="content">
+      <div class="contact_page">
+       <h1>Lets Get Creative</h1>
        
-      </div>
+       <form class="cform" action="">
+         <label for="fname">First name:</label><br>
+         <input type="text" id="fname" name="fname" placeholder="Please enter your first name..."><br>
+         <label for="lname">Last name:</label><br>
+         <input type="text" id="lname" name="lname" placeholder="Please enter your last name..."><br>
+         <label for="message">Message</label><br>
+         <textarea type="message" name="message" id="message" placeholder="Please enter your message..."></textarea>
+         <br><br>
+         <input type="submit" value="Submit" class="g-recaptcha" 
+         data-sitekey="reCAPTCHA_site_key" 
+         data-callback='onSubmit' 
+         data-action='submit'>
+       </form>
+      </div>  
+     </div>
   </div>
 
   <footer class="footer">

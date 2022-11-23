@@ -109,33 +109,25 @@ hidenav.addEventListener("click", () => {
   menuBtn.classList.remove("displaynone");
 });
 
+// event listener for highlighted Page name 
+
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll('.nav_link').forEach(link => {
+  if(link.href.includes(`${activePage}`)){
+    link.classList.add('active');
+    console.log(link);
+  }
+})
+
+
+
+
 
 // STICK SCROLL
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
-
-
-
-
-// event listener for highlighted Page name 
-let els = document.querySelectorAll('a.nav_link');
-// let biolink = document.querySelector(".biolink");
-
-els.forEach(el => {
-  el.addEventListener("click", e => {
-    els.forEach(a => a.closest('a').classList.remove('active'));
-    e.target.closest('a').classList.add('active');
-  })
-
-})
-
-
-
-    
-
-
 
 
 
