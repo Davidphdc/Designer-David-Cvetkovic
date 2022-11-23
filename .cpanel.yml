@@ -3,6 +3,6 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/davidcve/public_html/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp/css/static style.css $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp/static/css style.css $DEPLOYPATH
+    - /bin/cp/static/assets images $DEPLOYPATH
+    - /bin/cp/static/js js $DEPLOYPATH
