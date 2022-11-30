@@ -797,7 +797,8 @@ input[type=submit] {
 }
 @media (max-width: 63.9375em) {
   .articles .articlescont .articlescont_card .card {
-    border: none;
+    border-right: none;
+    border-bottom: 0.1rem dotted #ff5703;
   }
 }
 .articles .articlescont .articlescont_card .card img {
