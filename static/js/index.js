@@ -109,8 +109,7 @@ hidenav.addEventListener("click", () => {
   menuBtn.classList.remove("displaynone");
 });
 
-// event listener for highlighted Page name 
-// window.addEventListener("load", () => {
+
 const activePage = window.location.pathname;
 const navLinks = document.querySelectorAll('.nav_link').forEach(link => {
   if(link.href.includes(`${activePage}`)){
@@ -118,8 +117,6 @@ const navLinks = document.querySelectorAll('.nav_link').forEach(link => {
     console.log(link);
   }
 });
-
-// });
 
 
 
