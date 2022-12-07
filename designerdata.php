@@ -5,7 +5,7 @@ $lname = ($_POST["lname"]);
 $email = ($_POST["email"]);
 $message = ($_POST["message"]);
 
-$servername="localhost";
+$hostname="localhost";
 $username="DavidCvetkovic";
 $password="dcF!SH4711";
 $dbname="designerdata";
