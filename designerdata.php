@@ -5,8 +5,8 @@ $lname = ($_POST["lname"]);
 $email = ($_POST["email"]);
 $message = ($_POST["message"]);
 
-$hostname="localhost";
-$username="DavidCvetkovic";
+$hostname="davidcve";
+$username="davidcve_DavidCvetkovic";
 $password="dcF!SH4711";
 $dbname="davidcve_designerdata";
 $usertable="ContactForm";
