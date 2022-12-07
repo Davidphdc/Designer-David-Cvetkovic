@@ -42,8 +42,3 @@ window.addEventListener("scroll", () => {
 
 
 
-// Recapcha
-
-// function onSubmit(token) {
-//   document.getElementById("cform").submit();
-// }
