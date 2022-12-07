@@ -5,17 +5,17 @@ $lname = ($_POST["lname"]);
 $email = ($_POST["email"]);
 $message = ($_POST["message"]);
 
-// $hostname="localhost";
-// $username="davidcve_DavidCvetkovic";
-// $password="dcF!SH4711";
-// $dbname="davidcve_designerdata";
-// $usertable="ContactForm";
+$hostname="localhost";
+$username="davidcve_DavidCvetkovic";
+$password="dcF!SH4711";
+$dbname="davidcve_designerdata";
+$usertable="ContactForm";
 
-// $link = mysqli_connect($hostname, $username, $password, $dbname);
+$link = mysqli_connect($hostname, $username, $password, $dbname);
 
-// if($link === false) {
-//   die("ERROR: Could Not Connect" . mysqli_connect_error());
-// }
+if($link === false) {
+  die("ERROR: Could Not Connect" . mysqli_connect_error());
+}
 
 // $sql = "INSERT INTO $usertable (fname, lname, email, message) VALUES ('$fname','$lname', '$email', '$message')";
 
