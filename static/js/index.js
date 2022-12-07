@@ -44,8 +44,6 @@ window.addEventListener("scroll", () => {
 
 // Recapcha
 
-var onloadCallback = function() {
-  grecaptcha.render('cform', {
-    'sitekey' : '6LeKkWIjAAAAAAtE1vS3hFKSocwtb2M1Iceh8yaC'
-  });
-};
+function onSubmit(token) {
+  document.getElementById("cform").submit();
+}
