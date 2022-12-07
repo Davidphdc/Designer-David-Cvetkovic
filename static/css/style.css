@@ -1037,11 +1037,13 @@ input[type=submit] {
   width: 100%;
   min-height: 4.75rem;
   font-family: "Nunito", sans-serif;
+  padding: 0.4rem;
 }
 .content .contact_page form.cform input {
   margin: 1rem;
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
+  max-width: 24rem;
   padding: 0.4rem;
   border: none;
   font-family: "Nunito", sans-serif;
@@ -1053,6 +1055,7 @@ input[type=submit] {
   padding: 0.4rem 1rem;
   transition: 200ms ease-in-out;
   border: 2px #ffffff solid;
+  max-width: 16rem;
 }
 .content .contact_page form.cform input[type=submit]:hover {
   transition: 200ms ease-in-out;
