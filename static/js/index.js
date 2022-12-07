@@ -44,16 +44,16 @@ window.addEventListener("scroll", () => {
 
 // Recapcha
 
-function onSubmit(token) {
-  document.getElementById("cform").submit();
-}
+// function onSubmit(token) {
+//   document.getElementById("cform").submit();
+// }
 
 
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.ready(function() {
-    grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
-        // Add your logic to submit to your backend server here.
-    });
-  });
-}
+// function onClick(e) {
+//   e.preventDefault();
+//   grecaptcha.ready(function() {
+//     grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+//         // Add your logic to submit to your backend server here.
+//     });
+//   });
+// }
