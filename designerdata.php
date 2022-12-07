@@ -6,9 +6,9 @@ $email = ($_POST["email"]);
 $message = ($_POST["message"]);
 
 $hostname="localhost";
-$username="DavidCvetkovic";
+$username="davidcve_DavidCvetkovic";
 $password="dcF!SH4711";
-$dbname="designerdata";
+$dbname="davidcve_designerdata";
 $usertable="ContactForm";
 
 $link = mysqli_connect($hostname, $username, $password, $dbname);
