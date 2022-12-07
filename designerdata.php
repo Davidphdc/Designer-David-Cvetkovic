@@ -8,7 +8,7 @@ $message = ($_POST["message"]);
 $servername="localhost";
 $username="DavidCvetkovic";
 $password="dcF!SH4711";
-$dbname="davidcve_designerdata";
+$dbname="designerdata";
 $usertable="ContactForm";
 
 $link = mysqli_connect($hostname, $username, $password, $dbname);
