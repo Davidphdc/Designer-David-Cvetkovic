@@ -9,7 +9,7 @@
     $message = $_POST['message'];
     
     //send email
-    mail($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
+    mail($admin_email, "New Inquiry", $message . ' - ' . $fname, "From:" . $email);
     
     header('Location: http://davidcvetkovic.com/inquirysubmitted.html');
   }
