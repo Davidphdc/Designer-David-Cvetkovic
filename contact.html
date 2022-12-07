@@ -13,7 +13,16 @@
   <script src="https://kit.fontawesome.com/e5e981c3a8.js" crossorigin="anonymous"></script>
 
 <script src="https://www.google.com/recaptcha/api.js?render=6LdiaF8jAAAAAHMZtXWBh9Y7wJW5XFUHoniPrdt7"></script>
-
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+      grecaptcha.execute('6LdiaF8jAAAAAHMZtXWBh9Y7wJW5XFUHoniPrdt7', {action: 'submit'}).then(function(token) {
+          // Add your logic to submit to your backend server here.
+      });
+    });
+  }
+</script>
 
   <title>David Cvetkovic | Contact</title>
 </head>
