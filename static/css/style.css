@@ -234,6 +234,8 @@ input[type=submit] {
   opacity: 60%;
   height: 6rem;
   transition: 600ms;
+  -webkit-animation: inflate 7s ease-in-out 0s infinite;
+          animation: inflate 7s ease-in-out 0s infinite;
   background-color: rgba(255, 255, 255, 0.2);
 }
 @media (max-width: 39.9375em) {
@@ -264,6 +266,8 @@ input[type=submit] {
   }
 }
 .home .home_content .biolink h1 {
+  -webkit-animation: inflate 7s ease-in-out 0s infinite;
+          animation: inflate 7s ease-in-out 0s infinite;
   background-color: rgba(255, 255, 255, 0.2);
   font-size: 1.2rem;
   min-width: none;
@@ -358,6 +362,30 @@ input[type=submit] {
   }
   100% {
     transform: translateY(0);
+  }
+}
+@-webkit-keyframes inflate {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+    background-color: #ffffff;
+  }
+  100% {
+    opacity: 50%;
+  }
+}
+@keyframes inflate {
+  0% {
+    opacity: 50%;
+  }
+  50% {
+    opacity: 100%;
+    background-color: #ffffff;
+  }
+  100% {
+    opacity: 50%;
   }
 }
 .bio_content {
