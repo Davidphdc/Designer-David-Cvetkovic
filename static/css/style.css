@@ -980,8 +980,7 @@ input[type=submit] {
 }
 .portfolio {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   position: relative;
   margin: 0;
@@ -990,24 +989,77 @@ input[type=submit] {
   background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
 }
 .portfolio .portfoliocont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 4rem;
   scroll-behavior: auto;
-  overflow-x: auto;
   overflow-y: auto;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
+  height: 80vh;
+  -webkit-animation: portfolioRefresh 2s ease-out 0s 1;
+          animation: portfolioRefresh 2s ease-out 0s 1;
 }
 .portfolio .portfoliocont h1 {
   color: #ff5703;
   letter-spacing: 0.4rem;
-}
-.portfolio .portfoliocont h2 {
-  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 .portfolio .portfoliocont::-webkit-scrollbar {
   display: none;
 }
+.portfolio .portfoliocont .portfoliocont_card {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 63.9375em) {
+  .portfolio .portfoliocont .portfoliocont_card {
+    flex-direction: column;
+  }
+}
+.portfolio .portfoliocont .portfoliocont_card .card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1rem;
+  transition: 200ms ease-in-out;
+}
+.portfolio .portfoliocont .portfoliocont_card .card img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio .portfoliocont .portfoliocont_card .card:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent {
+  padding: 1rem;
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent h2 {
+  color: #ff5703;
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent p {
+  font-size: 0.6rem;
+}
 
+@-webkit-keyframes portfolioRefresh {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes portfolioRefresh {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .content {
   display: flex;
   flex-direction: column;
