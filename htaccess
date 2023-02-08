@@ -1,8 +1,0 @@
-#Enforce HTTPS
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-#VIP
-RewriteRule ^about$ ./about.html [L]
-#RewriteRule ^index$ ./index.html [L]
