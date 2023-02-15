@@ -901,7 +901,7 @@ input[type=submit] {
   color: #ff5703;
 }
 .services .servicescont .servicescont_card .card .servicescontent p {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
 }
 
 @keyframes servicesRefresh {
@@ -973,7 +973,7 @@ input[type=submit] {
   color: #ff5703;
 }
 .portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent p {
-  font-size: 0.6rem;
+  font-size: 1.2rem;
 }
 
 @keyframes portfolioRefresh {
