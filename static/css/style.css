@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -8,14 +8,16 @@ html {
   margin: 0;
 }
 
-*, *::before, *::After {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
 
 body {
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   cursor: url(../../static/assets/arrowcursor.svg), auto;
 }
 
@@ -24,13 +26,13 @@ a {
 }
 
 p {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 input {
   cursor: url(../../static/assets/icursor.svg), auto;
 }
-input[type=submit] {
+input[type='submit'] {
   cursor: url(../../static/assets/handcursor.svg), auto;
 }
 
@@ -90,7 +92,7 @@ input[type=submit] {
     padding: 1rem 2rem;
   }
   .header .menu-btn {
-    background: url("../../static/assets/bars-solid-orange.svg") no-repeat;
+    background: url('../../static/assets/bars-solid-orange.svg') no-repeat;
     width: 2.5rem;
     height: 2.5rem;
     background-size: 1.5625rem;
@@ -110,8 +112,8 @@ input[type=submit] {
   justify-content: center;
   list-style: none;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .header .nav .nav_link {
   text-decoration: none;
@@ -153,7 +155,7 @@ input[type=submit] {
   }
   .header .nav .close-btn {
     position: absolute;
-    background: url("../../static/assets/xmark-solid-orange.svg") no-repeat;
+    background: url('../../static/assets/xmark-solid-orange.svg') no-repeat;
     width: 2.5rem;
     height: 2.5rem;
     background-size: 1.5625rem;
@@ -196,13 +198,15 @@ input[type=submit] {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center center/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    center/cover;
   justify-content: flex-end;
 }
 @media (max-width: 39.9375em) {
   .home {
     justify-content: center;
-    background: url("../../static/assets/docklandsbanner.jpg") no-repeat center center/cover;
+    background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+      center/cover;
   }
 }
 .home .home_content {
@@ -372,7 +376,8 @@ input[type=submit] {
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    right/cover;
 }
 @media (max-width: 39.9375em) {
   .bio_content {
@@ -383,7 +388,7 @@ input[type=submit] {
   display: grid;
   grid-template-columns: 100rem, 1fr, 1fr, 1fr, 1fr;
   grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-template-areas: "top-left top top top top-right" "left center center center right" "left center center center right" "left center center center right" "bottom-left bottom bottom bottom bottom-right";
+  grid-template-areas: 'top-left top top top top-right' 'left center center center right' 'left center center center right' 'left center center center right' 'bottom-left bottom bottom bottom bottom-right';
   gap: 1rem;
   align-items: center;
   margin-top: 4rem;
@@ -400,12 +405,12 @@ input[type=submit] {
 @media (max-width: 63.9375em) {
   .bio_content .content_display {
     display: grid;
-    grid-template-areas: "bio" "tech" "content" "image";
+    grid-template-areas: 'bio' 'tech' 'content' 'image';
   }
 }
 .bio_content .content_display h1 {
   color: #ffffff;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   letter-spacing: 0.6rem;
   text-transform: uppercase;
   background-color: rgba(34, 34, 34, 0.9);
@@ -434,7 +439,7 @@ input[type=submit] {
   width: auto;
   border: none;
   font-size: 1.8rem;
-  font-family: "Orbitron", sans-serif;
+  font-family: 'Orbitron', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
@@ -744,7 +749,8 @@ input[type=submit] {
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    right/cover;
 }
 @media (max-width: 63.9375em) {
   .articles {
@@ -848,7 +854,8 @@ input[type=submit] {
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    right/cover;
 }
 .services .servicescont {
   display: flex;
@@ -920,7 +927,8 @@ input[type=submit] {
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    right/cover;
 }
 .portfolio .portfoliocont {
   display: flex;
@@ -934,6 +942,7 @@ input[type=submit] {
   height: 80vh;
   animation: portfolioRefresh 2s ease-out 0s 1;
 }
+
 .portfolio .portfoliocont h1 {
   color: #ff5703;
   letter-spacing: 0.4rem;
@@ -984,6 +993,7 @@ input[type=submit] {
     transform: translateY(0);
   }
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -992,7 +1002,8 @@ input[type=submit] {
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    right/cover;
 }
 .content .contact_page {
   background-color: rgba(255, 255, 255, 0.9);
@@ -1038,7 +1049,7 @@ input[type=submit] {
   margin: 1rem;
   width: 100%;
   min-height: 4.75rem;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   padding: 0.4rem;
 }
 .content .contact_page form.cform input {
@@ -1048,9 +1059,9 @@ input[type=submit] {
   max-width: 24rem;
   padding: 0.4rem;
   border: none;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
-.content .contact_page form.cform input[type=submit] {
+.content .contact_page form.cform input[type='submit'] {
   color: #ff5703;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -1059,7 +1070,7 @@ input[type=submit] {
   border: 2px #ffffff solid;
   max-width: 16rem;
 }
-.content .contact_page form.cform input[type=submit]:hover {
+.content .contact_page form.cform input[type='submit']:hover {
   transition: 200ms ease-in-out;
   border: 2px #ff5703 solid;
 }
@@ -1073,7 +1084,8 @@ input[type=submit] {
   }
 }
 .image01 {
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center center/cover;
+  background: url('../../static/assets/docklandsbanner.jpg') no-repeat center
+    center/cover;
   height: 50%;
   width: 50%;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
