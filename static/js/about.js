@@ -26,10 +26,3 @@ techBTN.addEventListener("click", () => {
   bioDIS.classList.add("nonvisible"); 
   start1.classList.add("nonvisible");
  });
- 
-imgDIS.addEventListener('click', () => {
-  start1.classList.add("visible");
-  start1.classList.remove("nonvisible");
-  bioDIS.classList.add("nonvisible");
-  techDIS.classList.add("nonvisible");
-});
