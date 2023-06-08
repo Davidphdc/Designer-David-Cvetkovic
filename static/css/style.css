@@ -430,12 +430,12 @@ input[type=submit] {
   color: #000000;
 }
 .bio_content .content_display button.btn {
-  background-color: rgba(34, 34, 34, 0.9);
+  background-color: #ffffff;
   width: auto;
   border: none;
   font-size: 1.8rem;
   font-family: "Orbitron", sans-serif;
-  color: #ffffff;
+  color: #ff5703;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
 }
@@ -445,14 +445,14 @@ input[type=submit] {
   }
 }
 .bio_content .content_display button.btn:hover {
-  color: #ff5703;
-  background-color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
+  background-color: #ff5703;
   transition: 1s ease-in-out;
   cursor: url(../../static/assets/handcursor.svg), auto;
 }
 .bio_content .content_display button.btn:focus {
-  color: #ff5703;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #ff5703;
 }
 .bio_content .content_display #techDIS {
   justify-self: center;
@@ -899,9 +899,14 @@ input[type=submit] {
 }
 .services .servicescont .servicescont_card .card .servicescontent h2 {
   color: #ff5703;
+  margin-bottom: 1rem;
+}
+.services .servicescont .servicescont_card .card .servicescontent h3 {
+  margin-bottom: 1rem;
 }
 .services .servicescont .servicescont_card .card .servicescontent p {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 @keyframes servicesRefresh {
