@@ -1005,6 +1005,8 @@ input[type=submit] {
   flex-direction: column;
   padding: 1rem;
   width: auto;
+  scroll-behavior: auto;
+  overflow-y: auto;
   margin-top: 4rem;
   align-self: center;
   animation: FadeIn 2s ease-in-out 0s 1;
@@ -1028,6 +1030,8 @@ input[type=submit] {
   }
 }
 .content .contact_page form.cform {
+  display: flex;
+  flex-direction: column;
   color: #000000;
   border: none;
   width: -moz-fit-content;
