@@ -857,7 +857,6 @@ input[type=submit] {
   margin-top: 4rem;
   scroll-behavior: auto;
   overflow-y: auto;
-  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
   height: 80vh;
   animation: servicesRefresh 2s ease-out 0s 1;
@@ -888,7 +887,6 @@ input[type=submit] {
 }
 .services .servicescont .servicescont_card .card img {
   width: 100%;
-  height: 100%;
 }
 .services .servicescont .servicescont_card .card:hover {
   transform: scale(1.1);
@@ -934,7 +932,6 @@ input[type=submit] {
   margin-top: 4rem;
   scroll-behavior: auto;
   overflow-y: auto;
-  padding: 1rem;
   background-color: rgba(255, 255, 255, 0.2);
   height: 80vh;
   animation: portfolioRefresh 2s ease-out 0s 1;
@@ -950,6 +947,8 @@ input[type=submit] {
 .portfolio .portfoliocont .portfoliocont_card {
   display: flex;
   flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 @media (max-width: 63.9375em) {
   .portfolio .portfoliocont .portfoliocont_card {
@@ -965,7 +964,6 @@ input[type=submit] {
 }
 .portfolio .portfoliocont .portfoliocont_card .card img {
   width: 100%;
-  height: 100%;
 }
 .portfolio .portfoliocont .portfoliocont_card .card:hover {
   transform: scale(1.1);
@@ -976,9 +974,23 @@ input[type=submit] {
 }
 .portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent h2 {
   color: #ff5703;
+  margin-bottom: 1rem;
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent h3 {
+  margin-bottom: 1rem;
 }
 .portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent p {
   font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ff5703;
+  border: solid 2px rgba(255, 255, 255, 0);
+}
+.portfolio .portfoliocont .portfoliocont_card .card .portfoliocontent a:hover {
+  border-color: #ff5703;
 }
 
 @keyframes portfolioRefresh {
