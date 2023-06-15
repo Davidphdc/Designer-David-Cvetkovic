@@ -466,7 +466,7 @@ input[type=submit] {
   justify-content: center;
   padding: 0.6rem;
   margin-top: 1rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
 }
 .bio_content .content_display .headbio_content h2 {
   font-size: 1.4rem;
@@ -512,7 +512,7 @@ input[type=submit] {
   flex-direction: column;
   padding: 0.6rem;
   margin-top: 1rem;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   scroll-behavior: auto;
   overflow-x: auto;
   overflow-y: auto;
@@ -866,7 +866,7 @@ input[type=submit] {
 .services .servicescont .servicescont_card .card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   margin: 1rem;
   transition: 200ms ease-in-out;
 }
@@ -943,7 +943,7 @@ input[type=submit] {
 .portfolio .portfoliocont .portfoliocont_card .card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   margin: 1rem;
   transition: 200ms ease-in-out;
 }
@@ -997,7 +997,7 @@ input[type=submit] {
   background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
 }
 .content .contact_page {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -1046,11 +1046,11 @@ input[type=submit] {
   padding: 0.4rem;
 }
 .content .contact_page form.cform input {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   width: 100%;
   max-width: 24rem;
   padding: 0.4rem;
-  border: none;
+  border: solid 1px black;
   font-family: "Nunito", sans-serif;
 }
 .content .contact_page form.cform input[type=submit] {
@@ -1059,20 +1059,23 @@ input[type=submit] {
   font-size: 1.8rem;
   padding: 0.4rem 1rem;
   transition: 200ms ease-in-out;
-  border: 2px #ffffff solid;
+  border: 2px #ff5703 solid;
+  background-color: white;
+  margin-top: 2rem;
   max-width: 16rem;
 }
 .content .contact_page form.cform input[type=submit]:hover {
   transition: 200ms ease-in-out;
-  border: 2px #ff5703 solid;
+  color: #ffffff;
+  background-color: #ff5703;
 }
 
 @keyframes FadeIn {
   0% {
-    opacity: 0;
+    transform: translateY(100%);
   }
   100% {
-    opacity: 100%;
+    transform: translateY(0);
   }
 }
 .privacy {
