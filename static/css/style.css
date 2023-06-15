@@ -141,7 +141,7 @@ input[type=submit] {
     position: fixed;
     display: flex;
     flex-direction: column;
-    background: #222222;
+    background: #ffffff;
     min-width: 21.875rem;
     height: 100vh;
     top: 0%;
