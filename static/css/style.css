@@ -28,7 +28,7 @@ p {
 }
 
 input {
-  cursor: url(../../static/assets/icursor.svg), auto;
+  cursor: auto;
 }
 input[type=submit] {
   cursor: url(../../static/assets/handcursor.svg), auto;
@@ -64,7 +64,7 @@ input[type=submit] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: rgba(255, 255, 255, 0.2);
+  background: #ffffff;
   padding: 0 6.25rem;
   transition: 0.6s;
 }
@@ -117,7 +117,7 @@ input[type=submit] {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
   letter-spacing: 0.4rem;
   transition: 0.3s;
@@ -173,14 +173,14 @@ input[type=submit] {
   color: #ff5703;
 }
 .header.sticky {
-  background: #222222;
+  background: #ffffff;
   padding: 0.325rem 0.625rem;
 }
 .header.sticky .logo img {
   height: 3rem;
 }
 .header.sticky .nav_link {
-  color: #ffffff;
+  color: #000000;
 }
 .header.sticky .active {
   color: #ff5703;
@@ -229,11 +229,9 @@ input[type=submit] {
   }
 }
 .home .home_content .logo img {
-  opacity: 60%;
   height: 6rem;
   transition: 600ms;
-  animation: inflate 7s ease-in-out 0s infinite;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
 }
 @media (max-width: 39.9375em) {
   .home .home_content .logo img {
@@ -242,7 +240,7 @@ input[type=submit] {
 }
 .home .home_content .logo img:hover {
   cursor: url(../../static/assets/handcursor.svg), auto;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #ffffff;
   transition: 1.5s;
   opacity: 100%;
   transform: scale(1.2);
@@ -263,8 +261,7 @@ input[type=submit] {
   }
 }
 .home .home_content .biolink h1 {
-  animation: inflate 7s ease-in-out 0s infinite;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #ffffff;
   font-size: 1.2rem;
   min-width: none;
   max-width: 30rem;
@@ -290,14 +287,14 @@ input[type=submit] {
   justify-content: center;
   letter-spacing: 0.2rem;
   line-height: 2rem;
-  background-color: #222222;
+  background-color: #ffffff;
   padding: 2rem 0 1rem 0;
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   list-style: none;
 }
 .footer .section a {
-  color: #ffffff;
+  color: #000000;
   transition: 400ms ease-in-out;
   text-decoration: none;
 }
@@ -307,7 +304,7 @@ input[type=submit] {
   transition: 400ms ease-in-out;
 }
 .footer .section h4 {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 0.8rem;
 }
 @media (max-width: 63.9375em) {
@@ -322,7 +319,7 @@ input[type=submit] {
 }
 .footer .section__socials a i {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   font-weight: 400;
   font-size: 1.8rem;
   transition: 400ms ease-in-out;
@@ -345,22 +342,10 @@ input[type=submit] {
 
 @keyframes PageRefresh {
   0% {
-    transform: translateY(-100%);
+    transform: translateY(100%);
   }
   100% {
     transform: translateY(0);
-  }
-}
-@keyframes inflate {
-  0% {
-    opacity: 50%;
-  }
-  50% {
-    opacity: 100%;
-    background-color: #ffffff;
-  }
-  100% {
-    opacity: 50%;
   }
 }
 .bio_content {
