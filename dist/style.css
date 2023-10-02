@@ -62,7 +62,7 @@ input[type=submit] {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: space-around;
   align-items: center;
   background: #ffffff;
   padding: 0 6.25rem;
@@ -86,7 +86,7 @@ input[type=submit] {
 }
 @media (max-width: 63.9375em) {
   .header {
-    justify-content: right;
+    justify-content: space-between;
     padding: 1rem 2rem;
   }
   .header .menu-btn {
@@ -101,7 +101,7 @@ input[type=submit] {
   }
   .header .menu-btn:hover {
     transform: rotate(360deg);
-    transition: 600ms ease-in;
+    transition: 400ms ease-in;
   }
 }
 .header .nav {
@@ -117,7 +117,7 @@ input[type=submit] {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
-  color: #ff5703;
+  color: #000000;
   font-weight: 600;
   letter-spacing: 0.4rem;
   transition: 0.3s;
@@ -129,7 +129,7 @@ input[type=submit] {
   }
 }
 .header .nav .nav_link:hover {
-  color: #000000;
+  color: #ff5703;
   transition: 0.3s;
 }
 .header .nav.active {
@@ -148,7 +148,7 @@ input[type=submit] {
     right: -125%;
     padding: 5.625rem 3.125rem;
     overflow-y: auto;
-    transition: 1s;
+    transition: 0.5s;
     transition-property: right, visibility;
   }
   .header .nav .close-btn {
@@ -166,7 +166,7 @@ input[type=submit] {
   }
   .header .nav .close-btn:hover {
     transform: rotate(360deg);
-    transition: 600ms ease-out;
+    transition: 400ms ease-in;
   }
 }
 .header .nav .active {
@@ -264,14 +264,13 @@ input[type=submit] {
   background-color: #ffffff;
   font-size: 1.2rem;
   min-width: none;
-  max-width: 60rem;
+  max-width: 30rem;
   padding: 1rem;
   transition: 600ms;
 }
 @media (max-width: 39.9375em) {
   .home .home_content .biolink h1 {
     font-size: 0.8rem;
-    max-width: 30rem;
   }
 }
 .home .home_content .biolink h1:hover {
@@ -341,6 +340,14 @@ input[type=submit] {
   transition: 400ms ease-in-out;
 }
 
+@keyframes PageRefresh {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 .bio_content {
   display: flex;
   flex-direction: column;
