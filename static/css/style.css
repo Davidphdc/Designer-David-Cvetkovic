@@ -232,7 +232,6 @@ p {
 @media (max-width: 63.9375em) {
   .home .home_content .nav_content {
     padding-right: 0rem;
-    align-self: end;
   }
 }
 .home .home_content .nav_content h2 {
