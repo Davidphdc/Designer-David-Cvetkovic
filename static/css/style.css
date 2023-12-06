@@ -201,6 +201,7 @@ p {
 @media (max-width: 63.9375em) {
   .home .home_content {
     align-items: center;
+    height: 90vh;
   }
 }
 .home .home_content .lineborderT {
@@ -241,6 +242,7 @@ p {
 .home .home_content .nav_content .menu_content h2 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  font-size: 0.6rem;
 }
 .home .home_content .nav_content .menu_content:hover {
   transform: scale(1.2);
