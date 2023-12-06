@@ -206,7 +206,7 @@ p {
   }
 }
 .home .home_content .lineborderT {
-  background-color: #ff5703;
+  background-color: #000000;
   height: 0.4rem;
   width: 75%;
   transform: translateY(-3rem);
