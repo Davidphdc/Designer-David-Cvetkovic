@@ -16,22 +16,10 @@ html {
 
 body {
   font-family: "Orbitron", sans-serif;
-  cursor: url(../../static/assets/arrowcursor.svg), auto;
-}
-
-a {
-  cursor: url(../../static/assets/handcursor.svg), auto;
 }
 
 p {
   font-family: "Nunito", sans-serif;
-}
-
-input {
-  cursor: auto;
-}
-input[type=submit] {
-  cursor: url(../../static/assets/handcursor.svg), auto;
 }
 
 .visible {
@@ -62,7 +50,7 @@ input[type=submit] {
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background: #ffffff;
   padding: 0 6.25rem;
@@ -101,7 +89,7 @@ input[type=submit] {
   }
   .header .menu-btn:hover {
     transform: rotate(360deg);
-    transition: 400ms ease-in;
+    transition: 600ms ease-in;
   }
 }
 .header .nav {
@@ -117,7 +105,7 @@ input[type=submit] {
   text-decoration: none;
   text-transform: uppercase;
   padding: 1rem;
-  color: #000000;
+  color: #ff5703;
   font-weight: 600;
   letter-spacing: 0.4rem;
   transition: 0.3s;
@@ -129,7 +117,7 @@ input[type=submit] {
   }
 }
 .header .nav .nav_link:hover {
-  color: #ff5703;
+  color: #000000;
   transition: 0.3s;
 }
 .header .nav.active {
@@ -148,7 +136,7 @@ input[type=submit] {
     right: -125%;
     padding: 5.625rem 3.125rem;
     overflow-y: auto;
-    transition: 0.5s;
+    transition: 1s;
     transition-property: right, visibility;
   }
   .header .nav .close-btn {
@@ -166,7 +154,7 @@ input[type=submit] {
   }
   .header .nav .close-btn:hover {
     transform: rotate(360deg);
-    transition: 400ms ease-in;
+    transition: 600ms ease-out;
   }
 }
 .header .nav .active {
@@ -197,7 +185,6 @@ input[type=submit] {
   padding: 0;
   height: 100vh;
   background: #ffffff;
-  justify-content: flex-end;
 }
 @media (max-width: 39.9375em) {
   .home {
@@ -208,8 +195,9 @@ input[type=submit] {
 .home .home_content {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
+  padding: 1rem;
   animation: PageRefresh 2s ease-out 0s 1;
 }
 @media (max-width: 63.9375em) {
@@ -217,11 +205,62 @@ input[type=submit] {
     align-items: center;
   }
 }
+.home .home_content .lineborderT {
+  background-color: #ff5703;
+  height: 0.4rem;
+  width: 75%;
+  transform: translateY(-3rem);
+}
+.home .home_content .lineborderB {
+  background-color: #ff5703;
+  height: 0.4rem;
+  width: 75%;
+  transform: translateY(3rem) translateX(28rem);
+}
+@media (max-width: 63.9375em) {
+  .home .home_content .lineborderB {
+    transform: translateY(3rem) translateX(0rem);
+  }
+}
+.home .home_content .nav_content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0rem;
+  width: 100%;
+  justify-self: end;
+}
+@media (max-width: 63.9375em) {
+  .home .home_content .nav_content {
+    padding-right: 0rem;
+    align-self: end;
+  }
+}
+.home .home_content .nav_content h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #ff5703;
+  letter-spacing: 0.2rem;
+  transition: 400ms ease-in-out;
+}
+.home .home_content .nav_content h2:hover {
+  transform: scale(1.2);
+  transition: 600ms ease-in-out;
+}
+@media (max-width: 63.9375em) {
+  .home .home_content .nav_content h2 {
+    text-align: right;
+  }
+}
+.home .home_content .nav_content a {
+  text-decoration: none;
+}
 .home .home_content .logo {
   color: #ff5703;
   letter-spacing: 0.4rem;
   padding: 1rem;
-  margin-left: 4rem;
+  border-width: 75%;
 }
 @media (max-width: 63.9375em) {
   .home .home_content .logo {
@@ -239,7 +278,6 @@ input[type=submit] {
   }
 }
 .home .home_content .logo img:hover {
-  cursor: url(../../static/assets/handcursor.svg), auto;
   background-color: #ffffff;
   transition: 1.5s;
   opacity: 100%;
@@ -252,7 +290,6 @@ input[type=submit] {
   letter-spacing: 0.2rem;
   align-self: flex-end;
   padding: 1rem;
-  margin-right: 4rem;
 }
 @media (max-width: 63.9375em) {
   .home .home_content .biolink {
@@ -264,18 +301,19 @@ input[type=submit] {
   background-color: #ffffff;
   font-size: 1.2rem;
   min-width: none;
-  max-width: 30rem;
+  max-width: 60rem;
   padding: 1rem;
-  transition: 600ms;
+  transition: 400ms ease-in-out;
 }
 @media (max-width: 39.9375em) {
   .home .home_content .biolink h1 {
     font-size: 0.8rem;
+    max-width: 30rem;
   }
 }
 .home .home_content .biolink h1:hover {
   background-color: rgba(255, 255, 255, 0.9);
-  transition: 1.5s;
+  transition: 600ms ease-in-out;
   opacity: 100%;
   transform: scale(1.2);
 }
@@ -340,14 +378,6 @@ input[type=submit] {
   transition: 400ms ease-in-out;
 }
 
-@keyframes PageRefresh {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 .bio_content {
   display: flex;
   flex-direction: column;
