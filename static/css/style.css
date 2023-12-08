@@ -331,7 +331,6 @@ p {
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   letter-spacing: 0.2rem;
   line-height: 2rem;
   background-color: #ffffff;
@@ -1025,7 +1024,7 @@ p {
     transform: translateY(0);
   }
 }
-.content {
+.home_content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1035,25 +1034,25 @@ p {
   background-color: #ffffff;
 }
 @media (max-width: 63.9375em) {
-  .content {
+  .home_content {
     justify-content: space-between;
   }
 }
-.content .logo_title {
+.home_content .logo_title {
   padding: 1rem;
   color: #ff5703;
   align-self: flex-start;
 }
-.content .logo_title h1 {
+.home_content .logo_title h1 {
   color: #ff5703;
   margin-bottom: 1rem;
 }
-.content .logo_title .lineborderT {
+.home_content .logo_title .lineborderT {
   background-color: #ff5703;
   height: 0.4rem;
   width: 100%;
 }
-.content .biolink {
+.home_content .biolink {
   text-decoration: none;
   text-align: center;
   color: #ff5703;
@@ -1062,12 +1061,12 @@ p {
   padding: 1rem;
 }
 @media (max-width: 63.9375em) {
-  .content .biolink {
+  .home_content .biolink {
     align-self: center;
     margin-right: 0;
   }
 }
-.content .biolink h1 {
+.home_content .biolink h1 {
   font-size: 1.2rem;
   min-width: none;
   max-width: 60rem;
@@ -1075,17 +1074,17 @@ p {
   transition: 400ms ease-in-out;
 }
 @media (max-width: 39.9375em) {
-  .content .biolink h1 {
+  .home_content .biolink h1 {
     font-size: 0.8rem;
     max-width: 30rem;
   }
 }
-.content .lineborderB {
+.home_content .lineborderB {
   background-color: #ff5703;
   height: 0.4rem;
   width: 100%;
 }
-.content .contact_page {
+.home_content .contact_page {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -1093,23 +1092,23 @@ p {
   align-self: center;
 }
 @media (min-width: 64em) {
-  .content .contact_page {
+  .home_content .contact_page {
     align-self: flex-end;
     margin-right: 4rem;
   }
 }
-.content .contact_page h1 {
+.home_content .contact_page h1 {
   text-align: center;
   color: #ff5703;
   font-size: 1.8rem;
   letter-spacing: 0.4rem;
 }
 @media (max-width: 39.9375em) {
-  .content .contact_page h1 {
+  .home_content .contact_page h1 {
     font-size: 1.2rem;
   }
 }
-.content .contact_page form.cform {
+.home_content .contact_page form.cform {
   display: flex;
   flex-direction: column;
   color: #000000;
@@ -1117,18 +1116,18 @@ p {
   width: -moz-fit-content;
   width: fit-content;
 }
-.content .contact_page form.cform label {
+.home_content .contact_page form.cform label {
   letter-spacing: 0.4rem;
   font-weight: 600;
   color: #ff5703;
 }
-.content .contact_page form.cform textarea#message {
+.home_content .contact_page form.cform textarea#message {
   width: 100%;
   min-height: 4.75rem;
   font-family: "Nunito", sans-serif;
   padding: 0.4rem;
 }
-.content .contact_page form.cform input {
+.home_content .contact_page form.cform input {
   background-color: #ffffff;
   width: 100%;
   max-width: 24rem;
@@ -1137,7 +1136,7 @@ p {
   border: solid 1px black;
   font-family: "Nunito", sans-serif;
 }
-.content .contact_page form.cform input[type=submit] {
+.home_content .contact_page form.cform input[type=submit] {
   color: #ff5703;
   text-transform: uppercase;
   font-size: 1.8rem;
@@ -1148,7 +1147,7 @@ p {
   margin-top: 1rem;
   max-width: 16rem;
 }
-.content .contact_page form.cform input[type=submit]:hover {
+.home_content .contact_page form.cform input[type=submit]:hover {
   transition: 200ms ease-in-out;
   color: #ffffff;
   background-color: #ff5703;
@@ -1165,12 +1164,12 @@ p {
 .privacy {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   position: relative;
   margin: 0;
   padding: 2rem;
   height: 100vh;
-  background: url("../../static/assets/docklandsbanner.jpg") no-repeat center right/cover;
+  background-color: #ffffff;
 }
 .privacy .privacycont {
   display: flex;
@@ -1191,39 +1190,6 @@ p {
 }
 .privacy .privacycont::-webkit-scrollbar {
   display: none;
-}
-.privacy .privacycont .privacycont_card {
-  display: flex;
-  flex-direction: row;
-}
-@media (max-width: 63.9375em) {
-  .privacy .privacycont .privacycont_card {
-    flex-direction: column;
-  }
-}
-.privacy .privacycont .privacycont_card .card {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 1rem;
-  transition: 200ms ease-in-out;
-}
-.privacy .privacycont .privacycont_card .card img {
-  width: 100%;
-  height: 100%;
-}
-.privacy .privacycont .privacycont_card .card:hover {
-  transform: scale(1.1);
-  transition: 200ms ease-in-out;
-}
-.privacy .privacycont .privacycont_card .card .privacycontent {
-  padding: 1rem;
-}
-.privacy .privacycont .privacycont_card .card .privacycontent h2 {
-  color: #ff5703;
-}
-.privacy .privacycont .privacycont_card .card .privacycontent p {
-  font-size: 1.2rem;
 }
 
 @keyframes privacyRefresh {
