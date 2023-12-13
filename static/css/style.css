@@ -34,15 +34,6 @@ p {
   visibility: hidden;
 }
 
-.html {
-  overflow: scroll;
-  overflow-x: hiden;
-}
-
-::-webkit-scrollbar {
-  width: 0;
-}
-
 .header {
   z-index: 999;
   position: fixed;
@@ -52,6 +43,7 @@ p {
   display: flex;
   justify-content: right;
   align-items: right;
+  background: #ffffff;
   padding: 0 6.25rem;
   transition: 0.6s;
 }
@@ -174,7 +166,7 @@ p {
 }
 
 #app {
-  background-color: #222222;
+  background-color: #ffffff;
 }
 
 .home {
@@ -208,6 +200,7 @@ p {
   background-color: #ff5703;
   height: 0.4rem;
   width: 75%;
+  border: none;
 }
 @media (max-width: 63.9375em) {
   .home .home_content .lineborderT {
@@ -215,6 +208,7 @@ p {
   }
 }
 .home .home_content .lineborderB {
+  border: none;
   background-color: #ff5703;
   height: 0.4rem;
   width: 100%;
@@ -295,6 +289,7 @@ p {
   margin-bottom: 1rem;
 }
 .home .home_content .logo_title .lineborderT {
+  border: none;
   background-color: #ff5703;
   height: 0.4rem;
   width: 100%;
@@ -327,8 +322,13 @@ p {
   }
 }
 
+.footer {
+  display: flex;
+  position: relative;
+}
 .footer .section {
   display: flex;
+  position: relative;
   flex-direction: column;
   text-align: center;
   letter-spacing: 0.2rem;
@@ -357,24 +357,6 @@ p {
   .footer .section h4 {
     font-size: 0.6rem;
   }
-}
-.footer .section__socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.footer .section__socials a i {
-  text-decoration: none;
-  color: #000000;
-  font-weight: 400;
-  font-size: 1.8rem;
-  transition: 400ms ease-in-out;
-  padding: 0 0.4rem;
-}
-.footer .section__socials a i:hover {
-  transform: scale(1.4);
-  transition: 400ms ease-in-out;
-  color: #ff5703;
 }
 .footer .basefooter {
   padding: 0 3rem;
@@ -1163,40 +1145,97 @@ p {
 }
 .privacy {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  position: relative;
-  margin: 0;
-  padding: 2rem;
-  height: 100vh;
-  background-color: #ffffff;
-}
-.privacy .privacycont {
-  display: flex;
   flex-direction: column;
-  align-items: left;
-  margin-top: 4rem;
-  scroll-behavior: auto;
-  overflow-y: auto;
+  justify-content: space-between;
+  width: 100%;
   padding: 1rem;
-  background-color: #ffffff;
-  height: 80vh;
-  animation: privacyRefresh 2s ease-out 0s 1;
 }
-.privacy .privacycont h1 {
+@media (max-width: 63.9375em) {
+  .privacy {
+    align-items: center;
+    height: 90vh;
+  }
+}
+.privacy .lineborderT {
+  background-color: #ff5703;
+  height: 0.4rem;
+  width: 75%;
+  border: none;
+}
+@media (max-width: 63.9375em) {
+  .privacy .lineborderT {
+    width: 100%;
+  }
+}
+.privacy .logo {
   color: #ff5703;
   letter-spacing: 0.4rem;
-  margin-bottom: 4rem;
+  padding: 1rem;
+  background-color: none;
 }
-.privacy .privacycont::-webkit-scrollbar {
-  display: none;
+@media (max-width: 63.9375em) {
+  .privacy .logo {
+    margin-left: 0;
+  }
+}
+.privacy .logo img {
+  height: 6rem;
+  transition: 600ms;
+  background-color: #ffffff;
+}
+@media (max-width: 39.9375em) {
+  .privacy .logo img {
+    height: 4rem;
+  }
+}
+.privacy .logo_title {
+  padding: 1rem;
+  color: #ff5703;
+  align-self: flex-start;
+}
+.privacy .logo_title h1 {
+  margin-bottom: 1rem;
+}
+.privacy .logo_title .lineborderT {
+  border: none;
+  background-color: #ff5703;
+  height: 0.4rem;
+  width: 100%;
 }
 
-@keyframes privacyRefresh {
-  0% {
-    transform: translateY(100%);
+.biolink {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: #ff5703;
+  letter-spacing: 0.2rem;
+  align-self: flex-end;
+  padding: 1rem;
+}
+@media (max-width: 63.9375em) {
+  .biolink {
+    align-self: center;
+    margin-right: 0;
   }
-  100% {
-    transform: translateY(0);
+}
+.biolink h1 {
+  align-self: flex-end;
+  font-size: 1.2rem;
+  min-width: none;
+  max-width: 60rem;
+  padding: 1rem;
+  transition: 400ms ease-in-out;
+}
+@media (max-width: 39.9375em) {
+  .biolink h1 {
+    font-size: 0.8rem;
+    max-width: 30rem;
   }
+}
+.biolink .lineborderB {
+  border: none;
+  background-color: #ff5703;
+  height: 0.4rem;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
