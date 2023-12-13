@@ -374,7 +374,6 @@ p {
   justify-content: space-between;
   position: relative;
   margin: 0;
-  height: 100vh;
   background-color: #ffffff;
 }
 @media (max-width: 63.9375em) {
