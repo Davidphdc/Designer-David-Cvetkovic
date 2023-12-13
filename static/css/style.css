@@ -43,7 +43,6 @@ p {
   display: flex;
   justify-content: right;
   align-items: right;
-  background: #ffffff;
   padding: 0 6.25rem;
   transition: 0.6s;
 }
@@ -120,7 +119,6 @@ p {
     position: fixed;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
     min-width: 21.875rem;
     height: 100vh;
     top: 0%;
