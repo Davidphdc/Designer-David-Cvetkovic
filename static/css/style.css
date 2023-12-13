@@ -168,7 +168,6 @@ p {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
 
 .home {
