@@ -218,7 +218,9 @@ p {
   flex-direction: column;
   padding-right: 0rem;
   width: 100%;
+  justify-content: center;
   align-items: center;
+  height: 80vh;
 }
 @media (max-width: 63.9375em) {
   .home .home_content .nav_content {
