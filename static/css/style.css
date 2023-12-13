@@ -168,6 +168,7 @@ p {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .home {
@@ -176,10 +177,6 @@ p {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  height: auto;
-  scroll-behavior: auto;
-  overflow-x: auto;
-  overflow-y: auto;
   background: #ffffff;
 }
 @media (max-width: 39.9375em) {
@@ -378,6 +375,7 @@ p {
   justify-content: space-between;
   position: relative;
   margin: 0;
+  height: 100vh;
   background-color: #ffffff;
 }
 @media (max-width: 63.9375em) {
@@ -515,9 +513,6 @@ p {
   justify-content: space-between;
   width: 100%;
   padding: 1rem;
-  scroll-behavior: auto;
-  overflow-x: auto;
-  overflow-y: auto;
 }
 @media (max-width: 63.9375em) {
   .privacy {
