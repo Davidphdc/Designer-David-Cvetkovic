@@ -176,6 +176,10 @@ p {
   flex-direction: column;
   margin: 0;
   padding: 0;
+  height: auto;
+  scroll-behavior: auto;
+  overflow-x: auto;
+  overflow-y: auto;
   background: #ffffff;
 }
 @media (max-width: 39.9375em) {
@@ -322,6 +326,10 @@ p {
   }
 }
 
+.footer {
+  display: flex;
+  position: relative;
+}
 .footer .section {
   display: flex;
   position: relative;
