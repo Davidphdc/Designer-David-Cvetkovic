@@ -220,7 +220,7 @@ p {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 60vh;
 }
 @media (max-width: 63.9375em) {
   .home .home_content .nav_content {
