@@ -30,42 +30,76 @@ const navLinks = document.querySelectorAll('.nav_link').forEach(link => {
 });
 
 
-
-// STICK SCROLL
 window.addEventListener("scroll", () => {
   const header = document.querySelector(".header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// JavaScript
-// Get all the tabs and content divs
+
 var tabs = document.querySelectorAll(".tab");
 var contents = document.querySelectorAll(".content");
 
-// Loop through the tabs and add a click event listener to each one
+
 tabs.forEach(function(tab) {
   tab.addEventListener("click", function(event) {
-    // Prevent the default action of the link
+   
     event.preventDefault();
-    // Get the content id from the data-content attribute of the tab
+    
     var contentId = tab.getAttribute("data-content");
-    // Get the content div that matches the content id
+
     var content = document.getElementById(contentId);
-    // Remove the active class from all the tabs and content divs
+    
     tabs.forEach(function(tab) {
       tab.classList.remove("active");
     });
     contents.forEach(function(content) {
       content.classList.remove("active");
     });
-    // Add the active class to the clicked tab and the corresponding content div
+    
     tab.classList.add("active");
     content.classList.add("active");
   });
 });
 
 
+var items = document.querySelectorAll(".scroller-item");
+var links = document.querySelectorAll(".anchor-menu a");
 
 
+var scroller = document.querySelector(".scroller-container");
+scroller.addEventListener("scroll", function() {
+
+  items.forEach(function(item) {
+    
+    var itemId = item.getAttribute("id");
+    var link = document.querySelector("[href='#" + itemId + "']");
+   
+    var rect = item.getBoundingClientRect();
+    var top = rect.top;
+    var bottom = rect.bottom;
+    
+    if (top >= 0 && bottom <= window.innerHeight) {
+      link.classList.add("active");
+    } else {
+     
+      link.classList.remove("active");
+    }
+  });
+});
 
 
+links.forEach(function(link) {
+  link.addEventListener("click", function(event) {
+
+    event.preventDefault();
+  
+    var targetId = link.getAttribute("href");
+ 
+    var target = document.querySelector(targetId);
+    
+    scroller.scrollTo({
+      top: target.offsetTop,
+      behavior: "smooth"
+    });
+  });
+});

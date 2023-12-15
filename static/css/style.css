@@ -62,7 +62,7 @@ p {
 .header .menu-btn {
   display: none;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 240em) {
   .header {
     justify-content: end;
     padding: 1rem 2rem;
@@ -114,7 +114,7 @@ p {
   right: 0;
   visibility: visible;
 }
-@media (max-width: 63.9375em) {
+@media (max-width: 240em) {
   .header .nav {
     position: fixed;
     display: flex;
@@ -469,45 +469,162 @@ p {
   padding-right: 0rem;
   width: 100%;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 70vh;
   font-family: "Nunito", sans-serif;
   padding-right: 10rem;
+  /* CSS */
+  /* Style the scroller container */
+  /* Style the scroller items */
+  /* Style the anchor menu */
+  /* Style the anchor links */
+  /* Style the active anchor link */
 }
 .uxui a {
   text-decoration: none;
 }
 @media (max-width: 63.9375em) {
   .uxui {
-    padding-right: 0rem;
+    padding-right: 1rem;
     height: 60vh;
   }
 }
-.uxui h1 {
-  margin-bottom: 4rem;
-  color: #ff5703;
+.uxui ::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
 }
-.uxui .menu_content {
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-  letter-spacing: 0.2rem;
-  transition: 400ms ease-in-out;
-}
-.uxui .menu_content h2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 0.6rem;
-}
-.uxui .menu_content:hover {
-  color: #ff5703;
-  transform: scale(1.2);
-  transition: 600ms ease-in-out;
+.uxui .scroller-container {
+  position: relative;
+  overflow-y: scroll;
+  width: 90rem;
+  height: 100%;
 }
 @media (max-width: 63.9375em) {
-  .uxui .menu_content {
-    text-align: center;
+  .uxui .scroller-container {
+    width: 24rem;
+    height: 100%;
   }
+}
+.uxui .scroller-item {
+  width: 100%;
+  height: 100%;
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: row;
+}
+.uxui .scroller-item h2 {
+  color: #ff5703;
+  text-align: center;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item h2 {
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    text-transform: uppercase;
+  }
+}
+.uxui .scroller-item p {
+  text-align: center;
+  align-self: center;
+  font-size: 1.4rem;
+  max-width: 40rem;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item {
+    flex-direction: column;
+    margin-bottom: 10rem;
+  }
+}
+.uxui .scroller-item img {
+  width: auto;
+}
+.uxui .scroller-item .image_sketch {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item .image_sketch {
+    margin-left: 0;
+  }
+}
+.uxui .scroller-item .image_sketch img {
+  width: 60%;
+}
+.uxui .scroller-item .image_flow {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item .image_flow {
+    margin-left: 0;
+  }
+}
+.uxui .scroller-item .image_flow img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.uxui .scroller-item .image_styles {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4rem;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item .image_styles {
+    margin-left: 0;
+  }
+}
+.uxui .scroller-item .image_styles img {
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.uxui .anchor-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  align-self: center;
+  right: 2rem;
+}
+@media (max-width: 39.9375em) {
+  .uxui .anchor-menu {
+    display: none;
+  }
+}
+.uxui .anchor-menu a {
+  padding: 0.625rem;
+  text-decoration: none;
+  color: #ff5703;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.uxui .anchor-menu a .dot {
+  background-color: #ff5703;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 1rem;
+  transition: 300ms ease-in-out;
+}
+.uxui .anchor-menu a.active .dot {
+  width: 2rem;
+  height: 2rem;
+  transition: 300ms ease-in-out;
 }
 
 .home_content {
