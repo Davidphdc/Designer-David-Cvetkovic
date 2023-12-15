@@ -480,6 +480,27 @@ p {
   /* Style the anchor links */
   /* Style the active anchor link */
 }
+.uxui_main {
+  display: flex;
+  flex-direction: column;
+  padding-right: 0rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Nunito", sans-serif;
+}
+.uxui_main h1 {
+  color: #ff5703;
+}
+.uxui_main a {
+  color: #000000;
+  text-decoration: none;
+}
+.uxui_main a:hover {
+  transform: scale(1.2);
+  transition: 600ms ease-in-out;
+}
 .uxui a {
   text-decoration: none;
 }
@@ -513,12 +534,16 @@ p {
   padding: 0.625rem;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 @media (max-width: 63.9375em) {
   .uxui .scroller-item {
     flex-direction: column;
-    min-height: 50rem;
+    min-height: 36rem;
   }
+}
+.uxui .scroller-item .figma {
+  align-self: center;
 }
 .uxui .scroller-item h2 {
   color: #ff5703;
@@ -539,6 +564,7 @@ p {
   align-self: center;
   font-size: 1.4rem;
   max-width: 40rem;
+  padding: 1rem;
 }
 @media (max-width: 63.9375em) {
   .uxui .scroller-item p {
@@ -547,8 +573,12 @@ p {
     padding: 1rem;
   }
 }
-.uxui .scroller-item img {
-  width: auto;
+.uxui .scroller-item .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 .uxui .scroller-item .image_sketch {
   margin-left: 4rem;
