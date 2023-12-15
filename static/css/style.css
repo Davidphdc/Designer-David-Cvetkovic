@@ -470,7 +470,7 @@ p {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 100vh;
   font-family: "Nunito", sans-serif;
   padding-right: 10rem;
   /* CSS */
@@ -503,7 +503,7 @@ p {
 @media (max-width: 63.9375em) {
   .uxui .scroller-container {
     width: 24rem;
-    height: 100vh;
+    height: 100%;
   }
 }
 .uxui .scroller-item {
@@ -513,6 +513,12 @@ p {
   padding: 0.625rem;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item {
+    flex-direction: column;
+    min-height: 50rem;
+  }
 }
 .uxui .scroller-item h2 {
   color: #ff5703;
@@ -539,14 +545,6 @@ p {
     font-size: 1rem;
     max-width: 30rem;
     padding: 1rem;
-  }
-}
-@media (max-width: 63.9375em) {
-  .uxui .scroller-item {
-    flex-direction: column;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    margin-bottom: 18rem;
   }
 }
 .uxui .scroller-item img {
