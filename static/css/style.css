@@ -498,6 +498,7 @@ p {
   overflow-y: scroll;
   width: 90rem;
   height: 100%;
+  padding: 1rem;
 }
 @media (max-width: 63.9375em) {
   .uxui .scroller-container {
