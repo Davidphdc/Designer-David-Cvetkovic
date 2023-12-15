@@ -503,10 +503,11 @@ p {
 @media (max-width: 63.9375em) {
   .uxui .scroller-container {
     width: 24rem;
-    height: 100%;
+    height: 100vh;
   }
 }
 .uxui .scroller-item {
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 0.625rem;
@@ -543,7 +544,9 @@ p {
 @media (max-width: 63.9375em) {
   .uxui .scroller-item {
     flex-direction: column;
-    margin-bottom: 14rem;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    margin-bottom: 18rem;
   }
 }
 .uxui .scroller-item img {
