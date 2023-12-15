@@ -546,6 +546,14 @@ p {
 }
 .uxui .scroller-item .figma {
   align-self: center;
+  width: 50rem;
+  height: 28.125rem;
+}
+@media (max-width: 63.9375em) {
+  .uxui .scroller-item .figma {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 .uxui .scroller-item h2 {
   color: #ff5703;
