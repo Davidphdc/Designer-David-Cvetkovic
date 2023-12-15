@@ -535,12 +535,14 @@ p {
 @media (max-width: 63.9375em) {
   .uxui .scroller-item p {
     font-size: 1rem;
+    max-width: 30rem;
+    padding: 1rem;
   }
 }
 @media (max-width: 63.9375em) {
   .uxui .scroller-item {
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 14rem;
   }
 }
 .uxui .scroller-item img {
