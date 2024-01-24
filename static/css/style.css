@@ -535,7 +535,7 @@ p {
   height: 100%;
   padding: 0.625rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 @media (max-width: 63.9375em) {
@@ -558,8 +558,6 @@ p {
 .uxui .scroller-item h2 {
   color: #ff5703;
   text-align: center;
-  writing-mode: vertical-lr;
-  text-orientation: upright;
   text-transform: uppercase;
 }
 @media (max-width: 63.9375em) {
@@ -641,6 +639,7 @@ p {
   padding: 0;
   position: fixed;
   align-self: center;
+  justify-self: center;
   right: 2rem;
 }
 @media (max-width: 39.9375em) {
